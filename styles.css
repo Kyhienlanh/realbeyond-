@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header .banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+header .banner img {
+    width: 100%;
+    height: auto;
+}
+
+header .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header .banner p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.introduction button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.introduction button:hover {
+    background-color: #ff1493;
+}
+
+.about-us, .campaign-details, .get-involved, .resources, .stories, .contact-us {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us .mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us .mission-text-container {
+    margin-right: 100px;
+}
+
+
+.about-us .imgmission {
+    flex: 0 0 auto;
+}
+
+.about-us .imgmission img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.about-us .mission-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.about-us .objectives {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-us .objective {
+    text-align: center;
+    width: 30%;
+}
+
+.about-us .objective img {
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+h2 {
+    color: #ff69b4;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+.statistics p, .resource-content ul, .resource-content h3 {
+    margin: 10px 0;
+}
+
+.contact-us a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin-right: 10px;
+    color: #ff69b4;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+.details-contenthehe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.details-contenthehe img {
+    width: 700px;;
+    height: 700px;
+}
+.details-contenthehehe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.details-contenthehehe img {
+    width: 700px;;
+    height: 700px;
+}
+.details-contenthehehehe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.resource-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details-contenthehehehe img {
+    width: 700px;;
+    height: 700px;
+}
+.details-contenthehehehehe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.details-contenthehehehehe img {
+    width: 700px;;
+    height: 700px;
+}
+.contact-us {
+    background-color: #f8f9fa; /* Màu nền */
+    padding: 50px 20px; /* Khoảng cách giữa nội dung và mép */
+    text-align: center; /* Căn giữa nội dung */
+    font-size: 16px; /* Cỡ chữ */
+    line-height: 1.5; /* Độ cao dòng */
+    color: #333; /* Màu chữ */
+}
+
+.contact-us p {
+    margin-bottom: 10px; /* Khoảng cách giữa các đoạn văn */
+}
+
+.social-media {
+    margin-top: 20px; /* Khoảng cách giữa các nút mạng xã hội và các thông tin liên hệ */
+}
+
+.social-media a {
+    display: inline-block; /* Hiển thị dạng block */
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+    color: #007bff; /* Màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.social-media a:hover {
+    color: #0056b3; /* Màu chữ khi rê chuột vào */
+}
+
+.mission-text-container {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 5s ease, transform 3s ease;
+}
+
+.mission-container.visible .mission-text-container {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* .imgmission{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 3.5s ease, transform 3.5s ease;
+}
+.mission-container.visible .imgmission {
+    opacity: 1;
+    transform: translateX(0);
+} */
+.objective {
+    opacity: 0;
+    transform: translateY(50px); /* Di chuyển từ dưới lên trên */
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.objective.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+.details-contenthehe {
+    opacity: 0;
+    transform: translateX(-50px); /* Di chuyển từ trái qua phải */
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.statistics.animated .details-contenthehe {
+    opacity: 1;
+    transform: translateX(0);
+}
+.details-contenthehehe {
+    opacity: 0;
+    transform: translateX(50px); /* Di chuyển từ phải qua trái */
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.target-audience.animated .details-contenthehehe {
+    opacity: 1;
+    transform: translateX(0);
+}
+.details-contenthehehehe {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 2.5s ease;
+}
+
+.outcomes.animated .details-contenthehehehe {
+    opacity: 1;
+}
+
+.outcome-image, .outcome-text {
+    opacity: 0;
+    transition: opacity 2.5s ease;
+}
+
+.outcomes.animated .outcome-image, .outcomes.animated .outcome-text {
+    opacity: 1;
+}
+
+.details-contenthehehehehe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.get-involved.animated .details-contenthehehehehe {
+    opacity: 1;
+}
+
+.involved1 {
+    opacity: 0;
+    transform: translateX(-50px); /* Đẩy vị trí sang trái */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Hiệu ứng 1.5s */
+}
+.involved2 {
+    opacity: 0;
+    transform: translateX(50px); /* Đẩy vị trí sang trái */
+    transition: opacity 2s ease, transform 2s ease; /* Hiệu ứng 1.5s */
+}
+
+.get-involved.animated .involved1, .get-involved.animated .involved2 {
+    opacity: 1;
+    transform: translateX(0); /* Khôi phục vị trí */
+}
+
+.resource-item-content {
+    opacity: 0;
+    transform: translateY(20px); /* Đẩy từ dưới lên */
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.resource-item-content.animated {
+    opacity: 1;
+    transform: translateY(0); /* Hiển thị ở vị trí ban đầu */
+}
